@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="index-container">
+    <div class="ParallaxVideo">
+    <video autoplay loop muted class="background-video">
+        <source src="~/videos/video.mp4" type="video/mp4"></source>
+    </video>
+    </div>
+    <h1 class="index-title ">Generative Artificial Intelligence</h1>
+    <div class="index-paragraph mt-3">
+        Generative artificial intelligence is artificial intelligence capable of generating
+        text, images, videos, or other data using generative models, often in response to
+        prompts. Generative AI models learn the patterns and structure of their input training
+        data and then generate new data that has similar characteristics.
+        <br><em>Wikipedia</em>
+    </div>
+</div>
+
+<div class="container-fluid under-image">
+<div class="row">
+    <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+</div>
+</div>
+
+
+<style>
+    
+
+
+     .ParallaxVideo video {
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -999;
+     }
+
+    .index-container{
+        width: 100%;
+    }
+
+    .index-paragraph{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.9vw;
+        color: white;
+        text-align: center;
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-title{
+        font-family: 'Anton', sans-serif;
+        background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: brown;
+        padding: 9vw 2vw 0vw 2vw;
+        text-align: center;
+        font-size: 7vw;
+    }
+</style>
